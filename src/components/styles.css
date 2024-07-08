@@ -1,0 +1,320 @@
+
+  
+  h1 {
+    color: #333;
+  }
+  
+  .posts-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .post-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 8px;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .post-item h3 {
+    margin: 0 0 8px;
+  }
+  
+  .post-item p {
+    color: #666;
+    margin: 0 0 16px;
+  }
+  
+  .post-item button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .post-item button:hover {
+    background-color: #0056b3;
+  }
+  .create-post-button{
+    color:white;
+    background-color: #305210;
+    height:35px;
+    width:100px;
+    border-width:0;
+    border-radius:7px;
+  }
+  .create-post-button:hover{
+    background-color: #72bd2c;
+  }
+  .heading-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .heading-section button{
+    position:absolute;
+    right:20%;
+    margin-top:15px;
+  }
+  .create-post-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background-color: #cac9c9;
+  }
+  
+  .create-post {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px; 
+  }
+  
+  .create-post h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .create-post form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .create-post input,
+  .create-post textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .create-post .submit-btn {
+    text-align: center;
+  }
+  
+  .create-post .submit-btn button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .create-post .submit-btn button:hover {
+    background-color: #0056b3;
+  }
+  
+  .create-post .error {
+    color: red;
+    margin-top: 5px;
+  }
+  
+  .create-post .submit-message {
+    text-align: center;
+    margin-top: 10px;
+    color: green;
+  }
+  
+  .submit-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .create-post button:hover {
+    background-color: #218838;
+  }
+  
+  .error {
+    color: red;
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+  
+  footer {
+    margin-top: 20px;
+    height:20px;
+  }
+  
+  footer p {
+    color: #666;
+    text-align: center;
+  }
+  .card {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+  
+  .card-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card h3 {
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    margin-bottom: 15px;
+  }
+  
+  .card button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  .card button:hover {
+    background-color: #0056b3;
+  }
+  .card-list {
+    display: grid;
+    gap: 20px;
+  }
+  
+  @media (min-width: 1200px) {
+    .card-list {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 1199px) and (min-width: 768px) {
+    .card-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .card-list {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .card {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .card-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card h3 {
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    margin-bottom: 15px;
+  }
+  
+  .card button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  .card button:hover {
+    background-color: #0056b3;
+  }
+  .edit-post {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .edit-post h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .edit-post form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .edit-post input[type="text"],
+  .edit-post textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .edit-post textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .edit-post .error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .edit-post button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .edit-post button:hover {
+    background-color: #0056b3;
+  }
+  
+  .edit-post .submit-message {
+    color: green;
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .updateBtn{
+    width:150px;
+    margin-left:150px;
+  }
+  .heading{
+    text-align: center;
+  }
+  .btn-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .submit-message {
+    color: green;
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
